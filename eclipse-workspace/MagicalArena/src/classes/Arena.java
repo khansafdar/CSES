@@ -11,7 +11,7 @@ public class Arena {
         this.currentAttacker = player1.getHealth() < player2.getHealth() ? player1 : player2;
         this.currentDefender = this.currentAttacker == player1 ? player2 : player1;
         System.out.println("First Attacker will be " + currentAttacker.getName() + " And Defender will be "+ currentDefender.getName());
-
+        System.out.println();
     }
 
     public Player fight() {
@@ -39,6 +39,7 @@ public class Arena {
         System.out.println("Health of Each player After Combat : ");
         System.out.println(currentAttacker.getName() + " : "+currentAttacker.getHealth());
         System.out.println(currentDefender.getName() + " : " + currentDefender.getHealth());
+        System.out.println();
     }
 
     private void swapRoles() {
