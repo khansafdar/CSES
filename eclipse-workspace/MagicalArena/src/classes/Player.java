@@ -1,14 +1,18 @@
 package classes;
 public class Player {
-	
+	private String name;
     private int health;
     private int strength;
     private int attack;
 
-    public Player(int health, int strength, int attack) {
-        this.health = health;
+    public Player(String name, int health, int strength, int attack) {
+        this.name = name;
+    	this.health = health;
         this.strength = strength;
         this.attack = attack;
+    }
+    public String getName() {
+    	return name;
     }
 
     public int getHealth() {
@@ -46,4 +50,5 @@ public class Player {
     public String toString() {
         return "Player(Health: " + health + ", Strength: " + strength + ", Attack: " + attack + ")";
     }
+
 }
